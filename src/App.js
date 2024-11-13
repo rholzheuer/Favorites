@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+// client/src/App.js
+import React from 'react';
 import './App.css';
+import Favorites from './components/Favorites';
+import UserFavorites from './components/UserFavorites';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <Link to="/">Popular Movies</Link> | <Link to="/user-favorites">My Favorites</Link>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Favorites />} />
+          <Route path="/user-favorites" element={<UserFavorites />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
