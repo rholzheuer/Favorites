@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f6f3;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  header .logo span {
+    font-size: 1.5rem;
+    color: #d24747;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #d24747;
+    font-weight: bold;
+  }
+  
+  nav input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #d24747;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .search-btn, .user-icon, .sign-in-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d24747;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #d24747;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .user-icon {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .user-info {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .user-info h2 {
+    color: #d24747;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .user-info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .favorite-movies {
+    margin-top: 2rem;
+  }
+  
+  .favorite-movies h2 {
+    color: #d24747;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .movie-card h3 {
+    color: #d24747;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-card button {
+    background-color: #f08f8f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
