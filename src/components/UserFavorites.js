@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './UserFavorites.css'; // Ensure the CSS file path is correct
-import logo from '/Users/robinholzheuer/Documents/01Uni/OAMK/Term2/AdvancedWebApplicationsProject/Project Group 1/BackupFavorites/Favorites/client/src/Logo.png'; // Ensure the logo path is correct
 
 const userFavoritesUrl = 'http://localhost:3001/api/favorites/user/945';
 const serverUrl = 'http://localhost:3001/api/favorites';
@@ -33,22 +32,6 @@ function UserFavorites() {
 
   return (
     <div>
-      <header>
-        <div className="logo">
-          <img src={logo} alt="Nord Flix Logo" />
-          <span>NORD FLIX</span>
-        </div>
-        <nav>
-          <a href="#">HOME</a>
-          <a href="#">FAVORITES</a>
-          <a href="#">SHOWTIMES</a>
-          <a href="#">GROUPS</a>
-          <input type="text" placeholder="Search" />
-          <button className="search-btn">SEARCH</button>
-          <button className="user-icon">A</button>
-          <button className="sign-in-btn">SIGN IN</button>
-        </nav>
-      </header>
 
       <main>
         <section className="user-info">
@@ -58,7 +41,7 @@ function UserFavorites() {
         </section>
 
         <section className="favorite-movies">
-          <h2>Your Favorite Movies</h2>
+          <h2>Your favorite movies</h2>
           <div className="movie-cards">
             {favorites.map(movie => (
               <div key={movie.id} className="movie-card">

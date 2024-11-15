@@ -114,7 +114,7 @@
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 200px;
+    width: 225px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@
   }
   
   .movie-card button {
-    background-color: #f08f8f;
+    background-color: #d33434;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
