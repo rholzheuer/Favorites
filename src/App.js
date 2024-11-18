@@ -1,7 +1,7 @@
 // client/src/App.js
 import React from 'react';
 import './App.css';
-import Favorites from './components/Favorites';
+import Favorites from './components/Movies';
 import UserFavorites from './components/UserFavorites';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import logo from '/Users/robinholzheuer/Documents/01Uni/OAMK/Term2/AdvancedWebApplicationsProject/Project Group 1/BackupFavorites/Favorites/client/src/Logo.png'; // Stellen Sie sicher, dass der Pfad zum Logo korrekt ist
@@ -16,8 +16,7 @@ function App() {
             <span>NORD FLIX</span>
           </div>
           <nav>
-            <Link to="/">HOME</Link>
-            <Link to="/favorites">FAVORITES</Link>
+            <Link to="/">MOVIES</Link>
             <Link to="/showtimes">SHOWTIMES</Link>
             <Link to="/groups">GROUPS</Link>
             <Link to="/user-favorites">MY PROFILE</Link>

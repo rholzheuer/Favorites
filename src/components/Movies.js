@@ -5,7 +5,7 @@ import axios from 'axios';
 const apiUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=8e00f8de49614d9ebf140af3901aa5b5';
 const serverUrl = 'http://localhost:3001/api/favorites';
 
-export default function Favorites() {
+export default function Movies() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
 

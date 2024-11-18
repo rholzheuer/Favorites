@@ -36,7 +36,7 @@ function UserFavorites() {
       <main>
         <section className="user-info">
           <h2>User Information</h2>
-          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Name:</strong> John Doe (Hardcoded)</p>
           <p><strong>Email:</strong> johndoe@example.com</p>
         </section>
 
